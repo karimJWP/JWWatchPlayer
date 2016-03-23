@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="lHC-j5-cfF">
+                            <items>
+                                <tableRow identifier="JWRow" id="FbH-Qp-UFW" customClass="JWRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="fHb-g5-rwm">
+                                        <items>
+                                            <label width="92.5" height="48.5" alignment="left" verticalAlignment="center" text="Label" id="ENo-FF-h9K"/>
+                                            <imageView width="35" alignment="right" verticalAlignment="center" id="o7z-N9-eAF" userLabel="Pic"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="fHb-g5-rwm" id="soC-KK-Ovb"/>
+                                        <outlet property="label" destination="ENo-FF-h9K" id="Nlk-aZ-qRf"/>
+                                        <outlet property="picture" destination="o7z-N9-eAF" id="hJq-CK-O3j"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="movieChoices" destination="lHC-j5-cfF" id="V25-0j-UpO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="337"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.34459333549999999" green="1" blue="0.96904640529999997" alpha="1" colorSpace="calibratedRGB"/>
+</document>
